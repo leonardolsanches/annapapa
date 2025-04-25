@@ -1,146 +1,35 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Resumo Profissional - Anna Papa</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-image: url('anna_papa_estilo_oleo.png');
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-      margin: 0;
-      padding: 0;
-      color: #2b2b2b;
-      backdrop-filter: blur(5px);
-    }
-    .container {
-      max-width: 880px;
-      margin: 40px auto;
-      background-color: rgba(255, 255, 255, 0.9);
-      border-radius: 16px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-      padding: 40px;
-      position: relative;
-    }
-    h1, h2, h3 {
-      color: #0077b6;
-    }
-    h1 {
-      font-size: 2em;
-      margin-bottom: 0.2em;
-    }
-    .badge {
-      display: inline-block;
-      background-color: #caf0f8;
-      color: #03045e;
-      padding: 4px 12px;
-      border-radius: 12px;
-      font-weight: bold;
-      margin: 4px;
-    }
-    .section {
-      margin-top: 30px;
-    }
-    ul {
-      padding-left: 20px;
-    }
-    ul li::marker {
-      color: #0077b6;
-    }
-    .callout {
-      background-color: #edf6f9;
-      border-left: 5px solid #00b4d8;
-      padding: 16px;
-      margin-top: 20px;
-      font-style: italic;
-    }
-    .contact a {
-      color: #0077b6;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .footer {
-      text-align: center;
-      font-size: 0.85em;
-      color: #888;
-      margin-top: 40px;
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 20px;
-    }
-    .section img {
-      width: 100%;
-      border-radius: 8px;
-    }
-    .whatsapp-button {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 12px 24px;
-      background-color: #25d366;
-      color: white;
-      border: none;
-      border-radius: 8px;
-      font-size: 16px;
-      text-align: center;
-      text-decoration: none;
-      font-weight: bold;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anna Papa - CV</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
-    <h1>🌟 Anna Papa</h1>
-    <h2><span class="badge">IT Senior Manager</span> <span class="badge">Líder em Integração Estratégica</span></h2>
-
-    <div class="callout">
-      +20 anos traduzindo {negócio em tecnologia}, com foco em {resultado, agilidade e clareza}.
+  <header class="hero">
+    <div class="overlay">
+      <img src="assets/img/foto-anna-papa.png" alt="Retrato de Anna Papa" class="hero-img">
+      <h1>Anna Papa</h1>
+      <p>IT Senior Manager | Estratégia TI & Negócio | Liderança e Inovação</p>
     </div>
+  </header>
 
-    <div class="section">
-      <h3>🔹 Expertises</h3>
-      <ul>
-        <li>{Integração TI x Negócio} com foco em valor e fluidez</li>
-        <li>{Governança de Portfólio} e gestão de até 100 colaboradores</li>
-        <li>{Redução de custos} e {aceleração de entregas} com automação</li>
-        <li>{Alta performance de equipes} com alocação inteligente de talentos</li>
-      </ul>
-    </div>
+  <section class="skills">
+    <h2>Principais Competências</h2>
+    <ul>
+      <li><img src="assets/img/icone-tecnologia-lideranca.png" alt="Tecnologia e Liderança"> Tecnologia e Liderança</li>
+      <li>Relacionamentos Interpessoais</li>
+      <li>Serviços de PMO</li>
+    </ul>
+  </section>
 
-    <div class="section grid">
-      <div>
-        <h3>🔧 Habilidades</h3>
-        <ul>
-          <li>{Liderança estratégica}</li>
-          <li>{Gestão de crises} com pragmatismo</li>
-          <li>{Negociação executiva} com áreas técnicas e C-Level</li>
-          <li>{Inglês e Espanhol fluentes}</li>
-        </ul>
-      </div>
-      <div>
-        <img src="https://images.unsplash.com/photo-1581090700227-1cbcb73373a3?auto=format&fit=crop&w=800&q=60" alt="Tecnologia e liderança">
-      </div>
+  <section class="galeria">
+    <h2>Último Encontro de Equipes</h2>
+    <div class="galeria-imgs">
+      <img src="assets/img/figura-encontro-equipe-01.png" alt="Foto do Encontro 1">
+      <img src="assets/img/figura-encontro-equipe-02.png" alt="Foto do Encontro 2">
     </div>
-
-    <div class="section">
-      <h3>🏢 Setores de Atuação</h3>
-      <p>{Telecom}, {Energia}, {Seguros}, {Finanças}, {Varejo}, {Serviços B2B/B2C}</p>
-    </div>
-
-    <div class="section">
-      <h3>📣 Contato</h3>
-      <p>📧 <a href="mailto:apapa0402@gmail.com">apapa0402@gmail.com</a><br>
-         🔗 <a href="https://www.linkedin.com/in/anna-papa-apapa" target="_blank">linkedin.com/in/anna-papa-apapa</a></p>
-      <a href="http://wa.me/5521992081696" class="whatsapp-button" target="_blank">💬 Fale com Anna via WhatsApp</a>
-    </div>
-
-    <div class="footer">
-      <p>Resumo Executivo · Desenvolvido com apoio de IA · 2025</p>
-    </div>
-  </div>
+  </section>
 </body>
 </html>
