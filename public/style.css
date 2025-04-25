@@ -1,128 +1,87 @@
 body {
-  font-family: 'Poppins', sans-serif;
   margin: 0;
-  background-color: #fffafc;
-  color: #333;
-}
-
-.hero {
-  position: relative;
-  background: url('assets/img/foto-anna-papa.png') no-repeat center center / cover;
-  height: 100vh;
-}
-
-.overlay {
-  background-color: rgba(255, 240, 245, 0.75); /* rosa pastel com transparência */
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 2rem;
-}
-
-.hero-img {
-  width: 150px;
-  border-radius: 50%;
-  margin-bottom: 1rem;
-  border: 4px solid #f7c6d9;
-}
-
-.skills ul {
-  list-style: none;
   padding: 0;
-}
-
-.skills li {
-  font-size: 1.1rem;
-  margin: 0.5rem 0;
-  display: flex;
-  align-items: center;
-}
-
-.skills img {
-  width: 24px;
-  margin-right: 10px;
-}
-
-.galeria {
-  padding: 2rem;
-}
-
-.galeria-imgs img {
-  width: 100%;
-  max-width: 300px;
-  margin: 1rem;
-  border-radius: 8px;
-  border: 2px solid #f7c6d9;
-}
-
-/* Responsivo */
-@media (max-width: 768px) {
-  .galeria-imgs {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  .certificacoes, .experiencia, .contato {
-  padding: 2rem;
-  background-color: #fff0f5;
-  border-top: 2px solid #f7c6d9;
-}
-
-.certificacoes ul, .experiencia .job {
-  margin: 1rem 0;
-}
-
-.job h3 {
-  color: #b8507e;
-  margin-bottom: 0.3rem;
-}
-
-.contato a {
-  color: #b8507e;
-  text-decoration: none;
-}
-
-.contato a:hover {
-  text-decoration: underline;
-}
-  }
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-.menu {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background-color: #fff0f5;
-  border-bottom: 2px solid #f7c6d9;
-  z-index: 999;
-}
-
-.menu ul {
+  font-family: "Segoe UI", sans-serif;
+  background: url("assets/img/foto-anna-papa.png") no-repeat center center fixed;
+  background-size: cover;
+  backdrop-filter: blur(4px);
   display: flex;
   justify-content: center;
-  gap: 2rem;
-  padding: 1rem;
-  margin: 0;
-  list-style: none;
+  align-items: center;
+  min-height: 100vh;
 }
 
-.menu a {
-  text-decoration: none;
-  color: #b8507e;
+.card {
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 2rem;
+  border-radius: 15px;
+  max-width: 600px;
+  width: 90%;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+h1 {
+  text-align: center;
+  color: #005a9c;
+}
+
+.badge-line {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 0.5rem 0;
+}
+
+.badge {
+  background: #d6f0ff;
+  padding: 0.3rem 0.8rem;
+  border-radius: 10px;
   font-weight: bold;
-  transition: color 0.3s;
+  color: #0077b6;
 }
 
-.menu a:hover {
-  color: #912e5e;
+.highlight {
+  background: #c5f3ec;
+  color: #04776f;
 }
 
-body {
-  padding-top: 60px; /* Espaço pro menu fixo */
+.tagline {
+  text-align: center;
+  font-style: italic;
+  margin-bottom: 1rem;
+  background: #e0f7fa;
+  padding: 0.5rem;
+  border-radius: 8px;
+}
+
+section {
+  margin-bottom: 1.5rem;
+}
+
+ul {
+  padding-left: 1rem;
+}
+
+.icon-img {
+  width: 32px;
+  margin-top: 0.5rem;
+}
+
+.whatsapp-btn {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.6rem 1rem;
+  background-color: #25D366;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.8rem;
+  margin-top: 1rem;
+  color: #666;
 }
