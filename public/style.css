@@ -1,8 +1,8 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Segoe UI", sans-serif;
-  background: url("assets/img/foto-anna-papa.png") no-repeat center center fixed;
+  font-family: 'Segoe UI', sans-serif;
+  background: url('assets/img/WhatsApp Image 2025-04-24 at 22.04.00.jpeg') no-repeat center center fixed;
   background-size: cover;
   backdrop-filter: blur(4px);
   display: flex;
@@ -12,65 +12,61 @@ body {
 }
 
 .card {
-  background-color: rgba(255, 255, 255, 0.85);
+  background-color: rgba(255, 255, 255, 0.9);
   padding: 2rem;
   border-radius: 15px;
-  max-width: 600px;
-  width: 90%;
+  max-width: 800px;
+  width: 95%;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
 
-h1 {
-  text-align: center;
-  color: #005a9c;
-}
-
-.badge-line {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 0.5rem;
-  margin: 0.5rem 0;
+.badge, .highlight {
+  display: inline-block;
+  margin: 0.2rem 0.4rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 10px;
+  font-weight: bold;
 }
 
 .badge {
   background: #d6f0ff;
-  padding: 0.3rem 0.8rem;
-  border-radius: 10px;
-  font-weight: bold;
   color: #0077b6;
 }
 
 .highlight {
-  background: #c5f3ec;
-  color: #04776f;
+  background: #fddde6;
+  color: #c2185b;
 }
 
 .tagline {
-  text-align: center;
   font-style: italic;
+  text-align: center;
   margin-bottom: 1rem;
-  background: #e0f7fa;
-  padding: 0.5rem;
+  background: #f0f8ff;
+  padding: 0.6rem;
   border-radius: 8px;
 }
 
-section {
-  margin-bottom: 1.5rem;
+.img-full {
+  width: 100%;
+  margin: 1rem 0;
+  border-radius: 10px;
 }
 
-ul {
-  padding-left: 1rem;
+.img-half {
+  width: 48%;
+  margin: 1%;
+  border-radius: 10px;
 }
 
-.icon-img {
-  width: 32px;
-  margin-top: 0.5rem;
+.img-third {
+  width: 30%;
+  margin: 1%;
+  border-radius: 10px;
 }
 
 .whatsapp-btn {
   display: inline-block;
-  margin-top: 0.5rem;
   padding: 0.6rem 1rem;
   background-color: #25D366;
   color: white;
@@ -82,6 +78,6 @@ ul {
 footer {
   text-align: center;
   font-size: 0.8rem;
-  margin-top: 1rem;
+  margin-top: 2rem;
   color: #666;
 }
