@@ -64,5 +64,28 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+  .certificacoes, .experiencia, .contato {
+  padding: 2rem;
+  background-color: #fff0f5;
+  border-top: 2px solid #f7c6d9;
+}
+
+.certificacoes ul, .experiencia .job {
+  margin: 1rem 0;
+}
+
+.job h3 {
+  color: #b8507e;
+  margin-bottom: 0.3rem;
+}
+
+.contato a {
+  color: #b8507e;
+  text-decoration: none;
+}
+
+.contato a:hover {
+  text-decoration: underline;
+}
   }
 }
