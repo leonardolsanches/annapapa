@@ -86,4 +86,28 @@
   </section>
 
 </body>
+      // String Base64 (substitua pelo seu valor)
+    const base64String = "SGVsbG8sIHdvcmxkIQ==";
+
+    // Decodificar a string Base64
+    const decodedData = atob(base64String);
+
+    // Criar um Blob
+    const blob = new Blob([decodedData], { type: 'text/plain' }); // ou outro tipo de MIME
+
+    // Criar um link de download
+    const url = URL.createObjectURL(blob);
+
+    // Criar um arquivo ZIP (usando uma biblioteca como JSZip)
+    // Exemplo com JSZip
+    JSZip.generateAsync(
+        new JSZip({ type: 'base64' }), // ou 'blob'
+        { type: 'base64' }
+    ).then(function (data) {
+        // Download do arquivo
+        const link = document.createElement('a');
+        link.href = 'data:application/zip;base64,' + data;
+        link.download = 'output.zip';
+        link.click();
+    });
 </html>
