@@ -1,30 +1,206 @@
-/* Slide3 (topo) - reduzido para 1/3 */
+/* === GERAL === */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9fc;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* === HERO === */
+.hero {
+  padding: 2rem 1rem;
+  background: #eaf6ff;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+}
+
+.hero-img {
+  max-width: 180px;
+  width: 100%;
+  height: auto;
+  border-radius: 100px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  margin-bottom: 1rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  margin: 0.5rem 0;
+}
+
+.sub {
+  font-style: italic;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.whatsapp-btn {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  background: #25D366;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  margin-top: 0.5rem;
+}
+
+/* === QR MAIN (ex: Slide3) === */
+.qr-main {
+  margin-top: 1rem;
+}
+.qr-main img,
 .qr-top {
   width: 33%;
+  max-width: 200px;
+  height: auto;
   display: block;
   margin: 1rem auto;
 }
 
-/* Slide1 e Slide2 no rodapé - reduzidos para 1/4 */
+/* === MAIN CONTAINER === */
+.container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* === SECTION TITLES === */
+section {
+  margin-bottom: 2rem;
+}
+h2 {
+  font-size: 1.3rem;
+  background: #d9f1ff;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* === CONTENT VISIBILITY === */
+.content {
+  display: none;
+  padding-top: 0.5rem;
+}
+.content.visible {
+  display: block;
+}
+
+/* === THUMBNAILS === */
+.thumb {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 12px;
+  opacity: 0.9;
+  margin: 1rem auto;
+  display: block;
+}
+
+/* === ICON ROW === */
+.icon-row {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+.icon {
+  width: 80px;
+  max-width: 20%;
+  height: auto;
+  opacity: 0.4;
+}
+
+/* === CONTATOS === */
+.contact-section {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1rem 0;
+}
+.contact-btn {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 0.7rem 1.2rem;
+  border-radius: 8px;
+  transition: background 0.2s ease;
+}
+.contact-btn.email { background-color: #4a90e2; }
+.contact-btn.linkedin { background-color: #0077b5; }
+.contact-btn.whatsapp { background-color: #25d366; }
+.contact-btn:hover { opacity: 0.85; }
+
+/* === FOTO FINAL === */
+.closing-photo {
+  text-align: center;
+  margin: 2rem 0;
+}
+.closing-photo img {
+  max-width: 180px;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  opacity: 0.95;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  display: block;
+  margin: auto;
+}
+
+/* === RODAPÉ === */
+footer {
+  text-align: center;
+  font-size: 0.8rem;
+  color: #666;
+  padding: 2rem 0 1rem;
+  background-color: #f4f8fb;
+}
 .qr-footer {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1rem;
   flex-wrap: wrap;
-  padding: 1.5rem;
-  text-align: center;
-  background-color: #f4f8fb;
 }
-
 .qr-small {
   width: 25%;
   max-width: 120px;
+  height: auto;
 }
 
-/* Garante centralização de qualquer imagem */
+/* === RESET GERAL PARA TODAS IMAGENS === */
 img {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  height: auto;
+}
+
+/* === RESPONSIVO === */
+@media (max-width: 768px) {
+  h2 {
+    font-size: 1.1rem;
+  }
+  .hero h1 {
+    font-size: 1.6rem;
+  }
+  .sub {
+    font-size: 1rem;
+  }
+  .qr-top,
+  .qr-main img {
+    width: 60%;
+    max-width: 200px;
+  }
+  .qr-small {
+    width: 40%;
+    max-width: 150px;
+  }
 }
