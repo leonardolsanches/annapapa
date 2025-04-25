@@ -55,8 +55,8 @@ body {
 }
 .qr-main img,
 .qr-top {
-  width: 33%;
-  max-width: 200px;
+  width: 15%;
+  max-width: 100px;
   height: auto;
   display: block;
   margin: 1rem auto;
