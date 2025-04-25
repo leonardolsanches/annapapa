@@ -2,71 +2,58 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Anna Papa - CV</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Anna Papa - CV Estratégico</title>
   <link rel="stylesheet" href="style.css" />
+  <script>
+    window.addEventListener("load", () => {
+      const audio = new Audio("Top_Skills.mp3");
+      audio.loop = true;
+      audio.volume = 0.15;
+      audio.play().catch(() => console.log("Autoplay bloqueado."));
+    });
+  </script>
 </head>
 <body>
 
-  <!-- 🎵 Áudio com controle via JS -->
-  <audio id="audio-bg" loop>
-    <source src="https://annapapa.onrender.com/Top_Skills.mp3" type="audio/mpeg" />
-  </audio>
-  <script>
-    window.addEventListener("load", () => {
-      const audio = document.getElementById("audio-bg");
-      audio.volume = 0.15; // volume leve
-      audio.play().catch(() => {
-        // Alguns navegadores bloqueiam autoplay sem interação
-        console.log("Autoplay bloqueado, iniciar após interação.");
-      });
-    });
-  </script>
-
-  <!-- 🧾 Cartão de perfil -->
   <main class="card">
-    <h1><span class="icon">🌟</span> Anna Papa</h1>
-    <div class="badge-line">
-      <span class="badge">IT Senior Manager</span>
-      <span class="badge highlight">Líder em Integração Estratégica</span>
-    </div>
-    <p class="tagline">+20 anos traduzindo negócio em tecnologia, com foco em <em>resultado, agilidade e clareza</em>.</p>
+    <h1>🌟 Anna Papa</h1>
+    <p class="badge">IT Senior Manager</p>
+    <p class="badge highlight">Líder em Integração Estratégica</p>
+    <p class="tagline">+20 anos traduzindo negócio em tecnologia, com foco em resultado, agilidade e clareza.</p>
 
     <section>
-      <h2>🔹 Expertises</h2>
-      <ul>
-        <li>(Integração TI x Negócio) com foco em valor e fluidez</li>
-        <li>(Governança de Portfólio) e gestão de até 100 colaboradores</li>
-        <li>(Redução de custos) e (aceleração de entregas) com automação</li>
-        <li>(Alta performance de equipes) com alocação inteligente de talentos</li>
-      </ul>
+      <h2>🔹 Liderança Holística</h2>
+      <img src="assets/img/38195a24-93b5-4c2d-b094-0a8492232668.png" alt="Liderança holística" class="img-full">
     </section>
 
     <section>
-      <h2>🔹 Habilidades</h2>
-      <ul>
-        <li>(Liderança estratégica)</li>
-        <li>(Gestão de crises) com pragmatismo</li>
-        <li>(Negociação executiva) com áreas técnicas e C-Level</li>
-        <li>(Inglês e Espanhol fluentes)</li>
-      </ul>
-      <img src="assets/img/icone-tecnologia-lideranca.png" class="icon-img" alt="Tecnologia e liderança">
+      <h2>🔹 Comunicação e Cultura</h2>
+      <img src="assets/img/5cc846ab-db0d-47fa-beb7-3b304525a32e.png" class="img-half" alt="Reunião de equipe">
+      <img src="assets/img/fbe6ea10-cc84-4520-8855-e3aa980b969b.png" class="img-half" alt="Pesquisa de satisfação">
     </section>
 
     <section>
-      <h2>🔹 Setores de Atuação</h2>
-      <p>Telecom, Energia, Seguros, Finanças, Varejo, Serviços B2B/B2C</p>
+      <h2>🔹 Governança e Eficiência</h2>
+      <img src="assets/img/6bd14938-b46d-4b42-8f08-0e7c07f6e971.png" class="img-third" alt="Governança TI">
+      <img src="assets/img/a43e873d-5f02-4726-b3f7-dadbb5e2ef1e.png" class="img-third" alt="Gestão financeira">
+      <img src="assets/img/90e71cfb-9497-4233-a5dd-5831bdfb959c.png" class="img-third" alt="Tecnologia e negócios">
     </section>
 
     <section>
-      <h2>📬 Contato</h2>
+      <h2>🔹 Inovação com IA</h2>
+      <img src="assets/img/f567ad91-a260-4e9d-8e71-715b51e901a1.png" class="img-full" alt="Produtividade com IA">
+    </section>
+
+    <section>
+      <h2>📞 Contato</h2>
       <p><a href="mailto:apapa0402@gmail.com">apapa0402@gmail.com</a></p>
       <p><a href="https://www.linkedin.com/in/anna-papa-apapa" target="_blank">LinkedIn</a></p>
-      <a href="https://wa.me/5521992081696" target="_blank" class="whatsapp-btn">💬 Fale com Anna via WhatsApp</a>
+      <a href="https://wa.me/5521999999999" class="whatsapp-btn" target="_blank">💬 Fale com Anna via WhatsApp</a>
     </section>
 
     <footer>
-      <small>Resumo Executivo - Desenvolvido por Leonardo Sanches 2025</small>
+      <small>Desenvolvido com apoio de IA - 2025</small>
     </footer>
   </main>
 
