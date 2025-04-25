@@ -196,11 +196,11 @@ img {
   }
   .qr-top,
   .qr-main img {
-    width: 60%;
+    width: 30%;
     max-width: 200px;
   }
   .qr-small {
-    width: 40%;
+    width: 20%;
     max-width: 150px;
   }
 }
