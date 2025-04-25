@@ -1,44 +1,28 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Segoe UI', sans-serif;
-  position: relative;
-  background-color: #fefefe;
-  overflow-x: hidden;
-}
-
 .background-illustration {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
-  background-image: url('assets/img/38195a24-93b5-4c2d-b094-0a8492232668.png'); /* Folder de liderança */
+  height: 100vh;
+  background: url('assets/img/38195a24-93b5-4c2d-b094-0a8492232668.png') no-repeat center center;
   background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
   opacity: 0.08;
   z-index: 0;
   pointer-events: none;
 }
 
-.card {
-  position: relative;
-  z-index: 10;
-  background-color: rgba(255, 255, 255, 0.92);
-  margin: 2rem auto;
-  max-width: 680px;
-  padding: 2rem;
-  border-radius: 15px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.15);
+.music-btn {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  background: #25D366;
+  color: white;
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 1000;
 }
 
-img.img-full,
-img.img-half,
-img.img-third {
-  max-width: 100%;
-  height: auto;
-  opacity: 0.15;
-  display: block;
-  margin: 0.5rem auto;
-}
+/* Certifique-se de que o restante do seu .card, .img-half, .img-third etc. também estão presentes */
