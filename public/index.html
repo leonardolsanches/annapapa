@@ -3,88 +3,72 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Anna Papa - CV Profissional</title>
+  <title>Anna Papa - CV</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- 🎵 Áudio de fundo com streaming -->
-  <audio autoplay loop preload="auto" style="display: none;">
-    <source src="https://87c129bea46e5e69d2d92f9b9ef83ca8.r2.cloudflarestorage.com/cdk-ttsopenai-gpt-prod-upload-bucket/flare_uploaded/793358/20250425_005224_944034/Top_Skills_Competencias_interpessoais_Relacioname_inferred.mp3" type="audio/mpeg">
-    Seu navegador não suporta áudio HTML5.
+  <!-- 🎵 Áudio com controle via JS -->
+  <audio id="audio-bg" loop>
+    <source src="https://SEU-LINK-DE-AUDIO.mp3" type="audio/mpeg" />
   </audio>
+  <script>
+    window.addEventListener("load", () => {
+      const audio = document.getElementById("audio-bg");
+      audio.volume = 0.15; // volume leve
+      audio.play().catch(() => {
+        // Alguns navegadores bloqueiam autoplay sem interação
+        console.log("Autoplay bloqueado, iniciar após interação.");
+      });
+    });
+  </script>
 
-  <!-- 🧭 Menu fixo -->
-  <nav class="menu">
-    <ul>
-      <li><a href="#inicio">Início</a></li>
-      <li><a href="#competencias">Competências</a></li>
-      <li><a href="#galeria">Galeria</a></li>
-      <li><a href="#certificacoes">Certificações</a></li>
-      <li><a href="#experiencia">Experiência</a></li>
-      <li><a href="#contato">Contato</a></li>
-    </ul>
-  </nav>
-
-  <!-- 🧑 Início -->
-  <header class="hero" id="inicio">
-    <div class="overlay">
-      <img src="assets/img/foto-anna-papa.png" alt="Retrato de Anna Papa" class="hero-img">
-      <h1>Anna Papa</h1>
-      <p>IT Senior Manager | Estratégia TI & Negócio | Liderança e Inovação</p>
+  <!-- 🧾 Cartão de perfil -->
+  <main class="card">
+    <h1><span class="icon">🌟</span> Anna Papa</h1>
+    <div class="badge-line">
+      <span class="badge">IT Senior Manager</span>
+      <span class="badge highlight">Líder em Integração Estratégica</span>
     </div>
-  </header>
+    <p class="tagline">+20 anos traduzindo negócio em tecnologia, com foco em <em>resultado, agilidade e clareza</em>.</p>
 
-  <!-- 💡 Competências -->
-  <section class="skills" id="competencias">
-    <h2>Principais Competências</h2>
-    <ul>
-      <li><img src="assets/img/icone-tecnologia-lideranca.png" alt="Tecnologia e Liderança"> Tecnologia e Liderança</li>
-      <li>Relacionamentos Interpessoais</li>
-      <li>Serviços de PMO</li>
-    </ul>
-  </section>
+    <section>
+      <h2>🔹 Expertises</h2>
+      <ul>
+        <li>(Integração TI x Negócio) com foco em valor e fluidez</li>
+        <li>(Governança de Portfólio) e gestão de até 100 colaboradores</li>
+        <li>(Redução de custos) e (aceleração de entregas) com automação</li>
+        <li>(Alta performance de equipes) com alocação inteligente de talentos</li>
+      </ul>
+    </section>
 
-  <!-- 📸 Galeria -->
-  <section class="galeria" id="galeria">
-    <h2>Último Encontro de Equipes</h2>
-    <div class="galeria-imgs">
-      <img src="assets/img/figura-encontro-equipe-01.png" alt="Foto do Encontro 1">
-      <img src="assets/img/figura-encontro-equipe-02.png" alt="Foto do Encontro 2">
-      <img src="assets/img/figura-nova.png" alt="Nova imagem do encontro">
-    </div>
-  </section>
+    <section>
+      <h2>🔹 Habilidades</h2>
+      <ul>
+        <li>(Liderança estratégica)</li>
+        <li>(Gestão de crises) com pragmatismo</li>
+        <li>(Negociação executiva) com áreas técnicas e C-Level</li>
+        <li>(Inglês e Espanhol fluentes)</li>
+      </ul>
+      <img src="assets/img/icone-tecnologia-lideranca.png" class="icon-img" alt="Tecnologia e liderança">
+    </section>
 
-  <!-- 🏅 Certificações -->
-  <section class="certificacoes" id="certificacoes">
-    <h2>Certificações</h2>
-    <ul>
-      <li>Black Belt - Six Sigma</li>
-      <li>CCXC - Customer Experience</li>
-      <li>Prince2 Foundation</li>
-    </ul>
-  </section>
+    <section>
+      <h2>🔹 Setores de Atuação</h2>
+      <p>Telecom, Energia, Seguros, Finanças, Varejo, Serviços B2B/B2C</p>
+    </section>
 
-  <!-- 💼 Experiência -->
-  <section class="experiencia" id="experiencia">
-    <h2>Experiência Profissional</h2>
-    <div class="job">
-      <h3>Self-Employed – IT Senior Manager</h3>
-      <p>Abr 2025 – Atual | Integração Estratégica TI x Negócio, projetos end-to-end e liderança de equipes.</p>
-    </div>
-    <div class="job">
-      <h3>Claro Brasil – Gerente de Relacionamento TI</h3>
-      <p>Ago 2021 – Abr 2025 | Projetos estratégicos, governança e inovação com foco em resultados.</p>
-    </div>
-  </section>
+    <section>
+      <h2>📬 Contato</h2>
+      <p><a href="mailto:apapa0402@gmail.com">apapa0402@gmail.com</a></p>
+      <p><a href="https://www.linkedin.com/in/anna-papa-apapa" target="_blank">LinkedIn</a></p>
+      <a href="https://wa.me/5521999999999" target="_blank" class="whatsapp-btn">💬 Fale com Anna via WhatsApp</a>
+    </section>
 
-  <!-- ✉️ Contato -->
-  <section class="contato" id="contato">
-    <h2>Contato</h2>
-    <p>Email: <a href="mailto:apapa0402@gmail.com">apapa0402@gmail.com</a></p>
-    <p>Local: Rio de Janeiro, Brasil</p>
-  </section>
+    <footer>
+      <small>Resumo Executivo - Desenvolvido com apoio de IA - 2025</small>
+    </footer>
+  </main>
 
 </body>
-     
 </html>
