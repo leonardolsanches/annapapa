@@ -89,3 +89,40 @@ body {
 }
   }
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff0f5;
+  border-bottom: 2px solid #f7c6d9;
+  z-index: 999;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem;
+  margin: 0;
+  list-style: none;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #b8507e;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.menu a:hover {
+  color: #912e5e;
+}
+
+body {
+  padding-top: 60px; /* Espaço pro menu fixo */
+}
