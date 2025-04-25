@@ -1,198 +1,30 @@
-body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #f9f9fc;
-  color: #222;
-  line-height: 1.6;
-}
-
-/* HERO */
-.hero {
-  padding: 2rem 1rem;
-  background: #eaf6ff;
-  border-bottom: 1px solid #ccc;
-}
-
-.qr-header {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 2rem;
-  flex-wrap: wrap;
-}
-
-.qr-icon {
-  width: 120px;
-  max-width: 100%;
-}
-
-.hero-content {
-  text-align: center;
-  max-width: 360px;
-}
-
-.hero-img {
-  max-width: 180px;
-  border-radius: 100px;
-  box-shadow: 0 0 8px rgba(0,0,0,0.1);
-  margin-bottom: 1rem;
-}
-
-.hero h1 {
-  margin: 0;
-  font-size: 2rem;
-}
-
-.sub {
-  margin: 0.5rem 0 1rem;
-  font-style: italic;
-  font-size: 1.1rem;
-}
-
-.whatsapp-btn {
-  display: inline-block;
-  padding: 0.6rem 1.2rem;
-  background: #25D366;
-  color: white;
-  font-weight: bold;
-  border-radius: 8px;
-  text-decoration: none;
-  margin-top: 1rem;
-}
-
-.qr-main {
-  margin-top: 1rem;
-}
-
-.qr-main img {
-  width: 160px;
-  max-width: 100%;
-  margin-top: 0.5rem;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-/* MAIN */
-.container {
-  max-width: 900px;
-  margin: 2rem auto;
-  padding: 0 1rem;
-}
-
-section {
-  margin-bottom: 2rem;
-}
-
-h2 {
-  font-size: 1.3rem;
-  background: #d9f1ff;
-  padding: 0.6rem 1rem;
-  border-radius: 6px;
-  cursor: pointer;
-  user-select: none;
-}
-
-.content {
-  display: none;
-  padding-top: 0.5rem;
-}
-
-.content.visible {
+/* Slide3 (topo) - reduzido para 1/3 */
+.qr-top {
+  width: 33%;
   display: block;
+  margin: 1rem auto;
 }
 
-.thumb {
-  width: 100%;
-  max-width: 500px;
-  border-radius: 12px;
-  opacity: 0.9;
-  margin-top: 1rem;
-}
-
-.icon-row {
+/* Slide1 e Slide2 no rodapé - reduzidos para 1/4 */
+.qr-footer {
   display: flex;
-  gap: 1rem;
   justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 1rem;
-}
-
-.icon {
-  width: 80px;
-  opacity: 0.4;
-}
-
-/* CONTATO */
-.contact-section {
-  display: flex;
+  align-items: center;
   gap: 1rem;
   flex-wrap: wrap;
-  justify-content: center;
-  padding: 1rem 0;
-}
-
-.contact-btn {
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-  padding: 0.7rem 1.2rem;
-  border-radius: 8px;
-  display: inline-block;
-  transition: background 0.2s ease;
-}
-
-.contact-btn.email {
-  background-color: #4a90e2;
-}
-
-.contact-btn.linkedin {
-  background-color: #0077b5;
-}
-
-.contact-btn.whatsapp {
-  background-color: #25d366;
-}
-
-.contact-btn:hover {
-  opacity: 0.85;
-}
-
-/* FOTO FINAL */
-.closing-photo {
+  padding: 1.5rem;
   text-align: center;
-  margin: 2rem 0;
+  background-color: #f4f8fb;
 }
 
-.closing-photo img {
-  max-width: 180px;
-  border-radius: 12px;
-  opacity: 0.95;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+.qr-small {
+  width: 25%;
+  max-width: 120px;
 }
 
-footer {
-  text-align: center;
-  font-size: 0.8rem;
-  color: #666;
-  padding: 2rem 0 1rem;
-}
-
-/* MOBILE */
-@media (max-width: 768px) {
-  h2 {
-    font-size: 1.1rem;
-  }
-
-  .hero h1 {
-    font-size: 1.6rem;
-  }
-
-  .sub {
-    font-size: 1rem;
-  }
-
-  .qr-header {
-    flex-direction: column;
-    align-items: center;
-  }
+/* Garante centralização de qualquer imagem */
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
