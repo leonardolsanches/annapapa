@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Contador de Ping</title>
+<script>
+function ping() {
+    alert("Conexão ainda ativa! 😉");
+}
+</script>
+</head>
+<body style="text-align:center;margin-top:100px;">
+<h1>⏳ Aguardando Processamento...</h1>
+<button onclick="ping()" style="padding:20px;font-size:20px;">Ping!</button>
+</body>
+</html>
