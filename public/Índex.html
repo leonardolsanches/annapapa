@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Anna Papa - CV Estratégico</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- 🔈 Música automática com fallback -->
+  <audio id="bg-audio" autoplay muted loop>
+    <source src="Top_Skills.mp3"
+
+Perfeito! Vou continuar daqui e entregar para você o `index.html` **completo**, já com o **áudio corrigido**, **botão de ativação**, e tudo que combinamos.
+
+Aqui está o arquivo:
+
+---
+
+## ✅ `index.html` (atualizado)
+
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Anna Papa - CV Estratégico</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- 🔈 Música automática com fallback -->
+  <audio id="bg-audio" autoplay muted loop>
+    <source src="Top_Skills.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- Botão para ativar som caso o navegador bloqueie -->
+  <button id="playAudioBtn" class="audio-btn">▶️ Ativar Som</button>
+
+  <!-- 🎯 Ilustração principal + QR -->
+  <div class="hero">
+    <div class="hero-content">
+      <img src="assets/img/WhatsApp Image 2025-04-24 at 22.04.00.jpeg" alt="Anna Papa" class="hero-img">
+      <h1>Anna Papa</h1>
+      <p class="sub">IT Senior Manager | Especialista em Integração Estratégica entre <strong>TI</strong> e <strong>Negócio</strong></p>
+      <a href="https://wa.me/5521999999999" class="whatsapp-btn" target="_blank">💬 Fale com Anna via WhatsApp</a>
+
+      <!-- 🔳 Slide3 QR principal -->
+      <div class="qr-main">
+        <img src="assets/img/Slide3.PNG" alt="QR code para Anna" class="qr-top">
+      </div>
+    </div>
+  </div>
+
+  <main class="container">
+
+    <section>
+      <h2 onclick="toggle('exp')">📌 Experiência Profissional</h2>
+      <div id="exp" class="content visible">
+        <p><strong>+20 anos de experiência</strong> atuando como ponte entre a <strong>tecnologia</strong> e as áreas de <strong>negócio</strong>, com foco em <strong>eficiência</strong>, <strong>clareza</strong> e <strong>baixo atrito</strong>.</p>
+        <ul>
+          <li>Liderança de <strong>projetos estratégicos</strong> e equipes multidisciplinares com até 100 pessoas</li>
+          <li>Implantação de modelos de <strong>governança</strong> e reestruturação organizacional</li>
+          <li>Redução de custos operacionais por meio de <strong>automação</strong> e análise de processos</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2 onclick="toggle('skills')">🛠️ Habilidades e Liderança</h2>
+      <div id="skills" class="content visible">
+        <p>Habilidades em <strong>liderança estratégica</strong>, <strong>gestão de crises</strong>, <strong>negociação executiva</strong> com stakeholders técnicos e de negócio, e comunicação empática.</p>
+        <img src="assets/img/38195a24-93b5-4c2d-b094-0a8492232668.png" class="thumb" alt="Venn liderança holística">
+      </div>
+    </section>
+
+    <section>
+      <h2 onclick="toggle('gov')">📈 Governança e Inovação</h2>
+      <div id="gov" class="content visible">
+        <p>Experiência sólida em <strong>gestão de portfólio</strong>, <strong>governança de TI</strong> e <strong>iniciativas de transformação digital</strong>.</p>
+        <div class="icon-row">
+          <img src="assets/img/6bd14938-b46d-4b42-8f08-0e7c07f6e971.png" class="icon" alt="Governança TI">
+          <img src="assets/img/a43e873d-5f02-4726-b3f7-dadbb5e2ef1e.png" class="icon" alt="Finanças">
+          <img src="assets/img/90e71cfb-9497-4233-a5dd-5831bdfb959c.png" class="icon" alt="Tecnologia">
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2 onclick="toggle('contato')">📬 Contato</h2>
+      <div id="contato" class="content visible contact-section">
+        <a href="mailto:apapa0402@gmail.com" class="contact-btn email">📧 Enviar E-mail</a>
+        <a href="https://linkedin.com/in/anna-papa-apapa" target="_blank" class="contact-btn linkedin">💼 LinkedIn</a>
+        <a href="https://wa.me/5521999999999" target="_blank" class="contact-btn whatsapp">💬 WhatsApp</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 📷 Foto real da Anna -->
+  <div class="closing-photo">
+    <img src="assets/img/anna_papa_estilo_oleo.png" alt="Foto real de Anna Papa">
+  </div>
+
+  <!-- 🔚 Footer com Slide1 e Slide2 reduzidos -->
+  <footer>
+    <div class="qr-footer">
+      <img src="assets/img/Slide1.PNG" alt="QR code Leonardo" class="qr-small">
+      <small>Resumo Executivo | Desenvolvido por Leonardo Sanches com apoio de IA - 2025</small>
+      <img src="assets/img/Slide2.PNG" alt="Mensagem WhatsApp" class="qr-small">
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    function toggle(id) {
+      const el = document.getElementById(id);
+      if (window.innerWidth < 768) {
+        el.classList.toggle("visible");
+      }
+    }
+
+    // Controle de áudio
+    const audio = document.getElementById('bg-audio');
+    const playBtn = document.getElementById('playAudioBtn');
+
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        const playPromise = audio.play();
+        if (playPromise !== undefined) {
+          playPromise.then(() => {
+            audio.muted = false;
+          }).catch(() => {
+            // Se bloqueado, mostra botão
+            playBtn.style.display = 'block';
+          });
+        }
+      }, 1000);
+    });
+
+    playBtn.addEventListener('click', () => {
+      audio.muted = false;
+      audio.play();
+      playBtn.style.display = 'none';
+    });
+  </script>
+
+</body>
+</html>
