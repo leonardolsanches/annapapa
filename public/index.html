@@ -8,10 +8,36 @@
 </head>
 <body>
 
-  <!-- 🔈 Música automática -->
-<audio id="bg-audio" autoplay muted loop>
-  <source src="Top_Skills.mp3" type="audio/mpeg">
-</audio>
+  <!-- 🔈 Música automática com fallback -->
+  <audio id="bg-audio" autoplay muted loop>
+    <source src="Top_Skills.mp3"
+
+Perfeito! Vou continuar daqui e entregar para você o `index.html` **completo**, já com o **áudio corrigido**, **botão de ativação**, e tudo que combinamos.
+
+Aqui está o arquivo:
+
+---
+
+## ✅ `index.html` (atualizado)
+
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Anna Papa - CV Estratégico</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- 🔈 Música automática com fallback -->
+  <audio id="bg-audio" autoplay muted loop>
+    <source src="Top_Skills.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- Botão para ativar som caso o navegador bloqueie -->
+  <button id="playAudioBtn" class="audio-btn">▶️ Ativar Som</button>
 
   <!-- 🎯 Ilustração principal + QR -->
   <div class="hero">
@@ -19,7 +45,7 @@
       <img src="assets/img/WhatsApp Image 2025-04-24 at 22.04.00.jpeg" alt="Anna Papa" class="hero-img">
       <h1>Anna Papa</h1>
       <p class="sub">IT Senior Manager | Especialista em Integração Estratégica entre <strong>TI</strong> e <strong>Negócio</strong></p>
-      <a href="https://wa.me/5521992081696" class="whatsapp-btn" target="_blank">💬 Fale com Anna via WhatsApp</a>
+      <a href="https://wa.me/5521999999999" class="whatsapp-btn" target="_blank">💬 Fale com Anna via WhatsApp</a>
 
       <!-- 🔳 Slide3 QR principal -->
       <div class="qr-main">
@@ -63,17 +89,12 @@
     </section>
 
     <section>
-    <CENTER>
-       <h2 onclick="toggle('contato')">📬 Contato</h2>
+      <h2 onclick="toggle('contato')">📬 Contato</h2>
       <div id="contato" class="content visible contact-section">
         <a href="mailto:apapa0402@gmail.com" class="contact-btn email">📧 Enviar E-mail</a>
         <a href="https://linkedin.com/in/anna-papa-apapa" target="_blank" class="contact-btn linkedin">💼 LinkedIn</a>
+        <a href="https://wa.me/5521999999999" target="_blank" class="contact-btn whatsapp">💬 WhatsApp</a>
       </div>
-      <br>
-      <div> 
-        <a href="https://wa.me/5521992081696" target="_blank" class="contact-btn whatsapp">💬 WhatsApp</a>
-      </div>
-    </CENTER>
     </section>
 
   </main>
@@ -86,12 +107,13 @@
   <!-- 🔚 Footer com Slide1 e Slide2 reduzidos -->
   <footer>
     <div class="qr-footer">
-      <p><strong>Resumo Executivo | Desenvolvido por Leonardo Sanches com apoio de IA - 2025</p></strong>
       <img src="assets/img/Slide1.PNG" alt="QR code Leonardo" class="qr-small">
+      <small>Resumo Executivo | Desenvolvido por Leonardo Sanches com apoio de IA - 2025</small>
       <img src="assets/img/Slide2.PNG" alt="Mensagem WhatsApp" class="qr-small">
     </div>
   </footer>
 
+  <!-- Scripts -->
   <script>
     function toggle(id) {
       const el = document.getElementById(id);
@@ -99,6 +121,30 @@
         el.classList.toggle("visible");
       }
     }
+
+    // Controle de áudio
+    const audio = document.getElementById('bg-audio');
+    const playBtn = document.getElementById('playAudioBtn');
+
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        const playPromise = audio.play();
+        if (playPromise !== undefined) {
+          playPromise.then(() => {
+            audio.muted = false;
+          }).catch(() => {
+            // Se bloqueado, mostra botão
+            playBtn.style.display = 'block';
+          });
+        }
+      }, 1000);
+    });
+
+    playBtn.addEventListener('click', () => {
+      audio.muted = false;
+      audio.play();
+      playBtn.style.display = 'none';
+    });
   </script>
 
 </body>
